@@ -26,7 +26,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
       Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+       mainAxisAlignment: MainAxisAlignment.end,
         children: [
           SvgPicture.asset(Assets.imagesLogo),
         ],
@@ -39,7 +39,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
 void executeAfterBuild() {
   Future.delayed(const Duration(seconds: 2), () {
-    Navigator.pushNamed(context, Routes.onBoarding);
+    Navigator.pushNamed(context, Routes.login);
   });
 }
 }
